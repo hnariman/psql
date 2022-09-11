@@ -21,3 +21,7 @@ $PSQL -c "\dt"
 
 echo "describe table testing_table"
 $PSQL -c  "\d testing_table"
+
+
+echo "inserting sample values"
+$PSQL -c"table testing_table"

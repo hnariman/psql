@@ -24,10 +24,12 @@ $PSQL -c "create table testing_table (\
   )"
 ```
 
-echo "check if we have some new tables"
-
-echo "TESTING IF WE HAVE ANY TALBES"
+### check if we have some new tables
+```bash
 $PSQL -c "\dt"
+```
 
-echo "describe table testing_table"
+### describe table testing_table
+```bash
 $PSQL -c  "\d testing_table"
+```
