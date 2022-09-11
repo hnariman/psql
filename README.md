@@ -33,3 +33,19 @@ $PSQL -c "\dt"
 ```bash
 $PSQL -c  "\d testing_table"
 ```
+
+### "inserting sample values"
+```bash
+$PSQL -c"table testing_table"
+
+```
+
+### show databases
+```bash
+$PSQL -c "\l"
+```
+
+### select all from 
+```bash
+$PSQL -c "select * from testing_table"
+```
