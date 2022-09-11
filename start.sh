@@ -1,28 +1,18 @@
-# This is repo with fast start PSQL docker with mock data
+#!/bin/bash
 
+# start docke-compose
 
-### start docke-compose
-```bash
 docker-compose up -d --remove-orphans
-```
 
-### setting up PSQL command shortcut
-```bash
 PSQL="docker exec -it test-psql psql -U postgres"
-```
 
-### TESTING IF WE HAVE ANY TALBES
-```bash
+echo "TESTING IF WE HAVE ANY TALBES"
 $PSQL -c "\dt"
-```
 
-### create some sample table
-```bash
 $PSQL -c "create table testing_table (\
     id serial, \
     name varchar(50) not null \
   )"
-```
 
 echo "check if we have some new tables"
 
